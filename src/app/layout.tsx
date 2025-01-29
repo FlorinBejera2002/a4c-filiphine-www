@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-	title: "Arise for Christ",
-	description: "Arise for Christ Asociation",
-	icons: "/logo.svg",
+	title: "Arise for Christ | Filiphine",
+	description: "Arise for Christ Filiphine Asociation",
+	icons: "/logo.ico",
 };
 
 import "./globals.css";
