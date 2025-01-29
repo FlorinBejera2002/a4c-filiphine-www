@@ -159,11 +159,11 @@ const AccordionSection = () => {
 	];
 
 	return (
-		<div className="flex flex-col gap-2 md:pl-0">
+		<div className="flex flex-col gap-2 md:pl-0 bg-transparent">
 			{accordionItems.map((item, idx) => (
 				<InViewTransition delay={0.75 + idx * 0.25} key={item.title}>
 					<Accordion
-						customClassname="!pl-0"
+						customClassname="!pl-0 bg-transparent"
 						description={item.description}
 						expanded={expanded}
 						idx={idx}

@@ -37,11 +37,11 @@ const Accordion = ({
 			>
 				<div className="flex items-center gap-2">
 					{!isOpen ? (
-						<FaArrowRight className="size-3" />
+						<FaArrowRight className="size-3 text-accent" />
 					) : (
-						<FaArrowDown className="size-3" />
+						<FaArrowDown className="size-3 text-accent" />
 					)}
-					<div className="text-md mb-0 select-none font-semibold text-slate-900 md:text-lg">
+					<div className="text-md mb-0 select-none font-semibold text-gray-600 ">
 						{title}
 					</div>
 				</div>
@@ -49,7 +49,7 @@ const Accordion = ({
 					{isOpen && (
 						<motion.section
 							animate="open"
-							className=" pl-5 text-sm leading-6 text-slate-600"
+							className=" pl-5 text-sm leading-6 text-slate-700"
 							exit="collapsed"
 							initial="collapsed"
 							transition={{ duration: 0.4, ease: [0.04, 0.62, 0.23, 0.98] }}
