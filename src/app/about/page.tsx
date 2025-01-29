@@ -8,7 +8,7 @@ import AccordionSection from "./components/accordion-section";
 
 const About = () => {
 	return (
-		<section className="bg-white pb-20">
+		<section className="bg-white">
 			<div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 				<div className="flex flex-col gap-3">
 					<InViewTransition delay={0}>

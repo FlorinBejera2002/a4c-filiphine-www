@@ -1,5 +1,6 @@
 import About from "../about/page";
 import Socials from "../common/socials";
+import Vision from "../vision/page";
 import CardHero from "./components/card-hero";
 import { QuestionList } from "./components/question-list";
 
@@ -28,6 +29,7 @@ export default function Home() {
 			</div>
 
 			<About />
+			<Vision />
 		</>
 	);
 }

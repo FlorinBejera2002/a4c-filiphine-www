@@ -16,7 +16,7 @@ export const QuestionList = () => {
 				{questions.map((question, index) => (
 					<h3
 						key={question.id}
-						className="text-2xl font-bold text-white md:text-2xl lg:text-4xl"
+						className="text-2xl font-lato font-bold text-white md:text-2xl lg:text-4xl"
 					>
 						{question.text}
 					</h3>
