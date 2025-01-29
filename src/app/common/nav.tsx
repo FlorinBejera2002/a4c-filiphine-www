@@ -12,7 +12,7 @@ export default function NavBar() {
 	return (
 		<nav
 			className={cn(
-				" flex w-full items-center justify-center bg-blur py-6 transition-all duration-500 z-9999 fixed z-20",
+				" flex w-full items-center justify-center py-6 transition-all duration-500 z-9999 fixed z-20",
 				y !== null && y >= 25
 					? "bg-gray-950/[.4] shadow-sm backdrop-blur-md z-20"
 					: "",
