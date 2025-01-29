@@ -1,60 +1,66 @@
+"use client";
+
+import Image from "next/image";
 import InViewTransition from "../common/in-view-transition";
 import AccordionSection from "./components/accordion-section";
 import ContactUsBtn from "./components/contact-us-button";
+import AboutUsImage from "../../../public/About us page-bro.svg";
 
 const About = () => {
 	return (
-		<div className="main flex flex-col items-center">
-			<div className="custom-page-content z-index-2 max-w-6xl">
-				<div className="rounded-md bg-white !p-8 shadow-lg md:!p-12">
-					<div className="row">
-						<div className="col">
-							<InViewTransition delay={0}>
-								<p className="text-md line-height-7 md:text-lg">
-									Arise for Christ is a Christian mission that aims to mobilize
-									Christians to action, connect them, and organize Christian
-									organizations to be more effective in proclaiming the Gospel
-									and extending the Kingdom of God. Through the portal
-									ariseforchrist.com and using social media networking,
-									Christians will be able to communicate more easily, unite, and
-									encourage each other to act together for Christ.
-								</p>
-							</InViewTransition>
-						</div>
-					</div>
-					<div className="flex flex-col">
-						<InViewTransition delay={0.5}>
-							<p className="text-md line-height-7 md:text-lg max-w-[700px]">
-								We join our efforts and knowledge to witness the Gospel and
-								extend the Kingdom of God worldwide, starting from Romania.
-								Fulfilling God's desire (1 Timothy 2:4) is the mission of our
-								association, motivated by God's love for us, and in turn, we do
-								it for people (1 John 3:16).
-							</p>
-						</InViewTransition>
-
-						<AccordionSection />
-
-						<div className="appear-animation flex items-center py-4">
-							<ContactUsBtn />
-						</div>
-					</div>
-
-					<InViewTransition delay={0.25}>
-						<p className="text-md mb-0 pb-0 md:text-lg">
-							We aspire to see a growing movement of Christians who act for
-							Christ and implement the principles of the Kingdom of God. We
-							desire churches and believers to be dedicated to winning souls for
-							God, restoring those who have fallen, and helping those with
-							different problems for their spiritual growth. We do not intend to
-							replace the mission of the Lord's Church but rather emphasize,
-							motivate, and serve as a bridge for evangelizing people and
-							serving believers.
+		<section className="bg-white py-20">
+			<div className="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div className="flex flex-col">
+					<InViewTransition delay={0}>
+						<h3 className="text-sm font-semibold text-gray-500 tracking-wider uppercase">
+							About Us
+						</h3>
+						<h2 className="text-4xl font-bold text-gray-900 mt-2 leading-snug">
+							Helping <span className="text-accent">communities grow</span>{" "}
+							through the power of faith.
+						</h2>
+						<p className="text-lg text-gray-500 mt-4 leading-relaxed">
+							We empower believers to act, connect, and create lasting impact.
+							Our mission is to build a strong faith-driven community, united in
+							helping and uplifting each other through meaningful actions and
+							outreach programs.
 						</p>
 					</InViewTransition>
+
+					<InViewTransition delay={0.5}>
+						<div className="mt-6">
+							<ContactUsBtn />
+						</div>
+					</InViewTransition>
+				</div>
+
+				<InViewTransition delay={0.25}>
+					<div className="relative flex justify-center">
+						<div className="relative w-[90%] max-w-md">
+							<Image
+								src={AboutUsImage}
+								alt="About Us"
+								width={500}
+								height={400}
+							/>
+						</div>
+					</div>
+				</InViewTransition>
+			</div>
+
+			<div className="max-w-7xl mx-auto mt-16 px-6 lg:px-12">
+				<div className="bg-gray-100 p-8 rounded-lg shadow-lg">
+					<h3 className="text-3xl font-semibold text-center text-gray-800 mb-6">
+						Our Core Beliefs & Mission
+					</h3>
+					<p className="text-lg text-gray-600 text-center max-w-3xl mx-auto mb-6">
+						We are committed to spreading the Gospel, empowering believers, and
+						creating a strong, united Christian community.
+					</p>
+					<AccordionSection />
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

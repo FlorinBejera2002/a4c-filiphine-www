@@ -11,7 +11,7 @@ const ContactUsBtn = () => {
 	return (
 		<InViewTransition delay={1}>
 			<Link
-				className="flex items-center font-medium gap-2 rounded-md bg-accent p-4 py-2 text-black !no-underline hover:!no-underline"
+				className="flex items-center font-medium w-fit gap-2 rounded-md bg-accent p-4 py-2 text-white !no-underline hover:!no-underline"
 				href={`/${language}/evangelism-request`}
 			>
 				Contact Us
