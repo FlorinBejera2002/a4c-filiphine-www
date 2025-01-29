@@ -1,7 +1,5 @@
-import React from "react";
-
 import { About } from "../about/about";
-import { Social } from "../components/social";
+import Socials from "../components/socials";
 import { QuestionCarousel } from "./components/question-carousel";
 
 export default function Home() {
@@ -17,7 +15,7 @@ export default function Home() {
 			>
 				<div className="space-y-10 p-6 rounded-lg flex flex-col fixed w-full px-40">
 					<QuestionCarousel />
-					<Social />
+					<Socials />
 				</div>
 			</div>
 
