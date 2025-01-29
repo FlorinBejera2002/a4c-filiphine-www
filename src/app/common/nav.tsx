@@ -21,8 +21,8 @@ export default function NavBar() {
 			<div className="container flex justify-between items-center w-full">
 				<Image src={logo} alt="Logo" className="w-40 text-center pl-2" />
 				<div className=" flex justify-end w-full gap-5 md:pr-44">
-					<Link href="/">Home</Link>
 					<Link href="/about">About</Link>
+					<Link href="/vision">Vision</Link>
 					<Link href="/projects">Projects</Link>
 				</div>
 			</div>

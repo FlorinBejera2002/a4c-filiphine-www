@@ -8,18 +8,20 @@ import InViewTransition from "../../common/in-view-transition";
 
 export default function Projects() {
 	return (
-		<div className="max-w-7xl mx-auto  px-6 lg:px-12 bg-white">
-			<h3 className="text-3xl font-semibold  text-gray-900 mb-6">
-				Our Projects
-			</h3>
-			<p className="text-lg text-gray-600  mb-6">
-				We are committed to spreading the Gospel and helping those in need
-				through various faith-driven initiatives.
-			</p>
+		<div className="max-w-7xl mx-auto px-6 lg:px-12 bg-white">
+			<div className="text-start mb-5">
+				<h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider">
+					Our Projects
+				</h3>
+				<h2 className="text-4xl font-bold text-gray-900 mt-2">
+					Spreading the Gospel and{" "}
+					<span className="text-accent">Empowering Communities</span>
+				</h2>
+			</div>
 
 			<div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-3 h-96">
 				<InViewTransition delay={0.5}>
-					<div className="bg-white p-3 rounded-md h-60 shadow-md flex flex-col items-center text-center">
+					<div className="bg-blue-50 p-3 rounded-md h-60 shadow-md flex flex-col items-center text-center">
 						<Image
 							src={Project1}
 							alt="Personal Evangelism"
@@ -37,7 +39,7 @@ export default function Projects() {
 				</InViewTransition>
 
 				<InViewTransition delay={0.75}>
-					<div className="bg-white p-3 rounded-md h-60 shadow-md flex flex-col items-center text-center">
+					<div className="bg-blue-50 p-3 rounded-md h-60 shadow-md flex flex-col items-center text-center">
 						<Image
 							src={Project2}
 							alt="Recovery of the Fallen"
@@ -55,7 +57,7 @@ export default function Projects() {
 				</InViewTransition>
 
 				<InViewTransition delay={1}>
-					<div className="bg-white p-3 rounded-md h-60 shadow-md flex flex-col items-center text-center">
+					<div className="bg-blue-50 p-3 rounded-md h-60 shadow-md flex flex-col items-center text-center">
 						<Image
 							src={Project3}
 							alt="Biblical Counseling"
@@ -73,7 +75,7 @@ export default function Projects() {
 				</InViewTransition>
 
 				<InViewTransition delay={1.25}>
-					<div className="bg-white p-3 rounded-md h-60 shadow-md flex flex-col items-center text-center">
+					<div className="bg-blue-50 p-3 rounded-md h-60 shadow-md flex flex-col items-center text-center">
 						<Image
 							src={Project4}
 							alt="Intercessory Prayer"
@@ -91,7 +93,7 @@ export default function Projects() {
 				</InViewTransition>
 
 				<InViewTransition delay={1.5}>
-					<div className="bg-white p-3 rounded-md h-60 shadow-md flex flex-col items-center text-center">
+					<div className="bg-blue-50 p-3 rounded-md h-60 shadow-md flex flex-col items-center text-center">
 						<Image
 							src={Project5}
 							alt="Multimedia Projects"
