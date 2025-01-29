@@ -3,12 +3,9 @@ import { useEffect, useState } from "react";
 
 export default function Carousel() {
 	const titles = [
-		"Full-Stack Developer",
-		"Tech Lead",
-		"Team Leader and Coach",
-		"Founder and Brand Strategist",
-		"Content Creator",
-		"Public Relations",
+		"How can I encourage someone?",
+		"How can I support someone in prayer?",
+		"How can I help with the salvation of a loved one?",
 	];
 
 	const [currentTitle, setCurrentTitle] = useState(0);
@@ -21,8 +18,7 @@ export default function Carousel() {
 	}, []);
 
 	return (
-		<div className="text-start gap-3 flex w-full justify-start">
-			<p className="text-5xl font-bold text-white">I am</p>
+		<div className="text-start flex w-full justify-start">
 			<div className="text-5xl font-bold text-yellow-500 overflow-hidden">
 				<p
 					key={currentTitle}

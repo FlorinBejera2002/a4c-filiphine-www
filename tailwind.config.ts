@@ -14,8 +14,14 @@ const config: Config = {
         'outline-red': '0 0 10px 5px rgba(255, 0, 0, 0.5)'
       },
       colors: {
-        accent: '#e3ae00'
-      }
+        accent: '#003566'
+      },
+      fontFamily: {
+        lato: ['Lato', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+        playfair: ['Playfair', 'sans-serif']
+    },
+
     }
   }
 }
